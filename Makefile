@@ -20,7 +20,7 @@ uart.o: modules/uart/pl011.c
 	$(E) "  CC      " $@
 	$(Q) $(CROSS_PREFIX)gcc $(CFLAGS) -c $< -o $@
 
-head.o: arch/head.s
+head.o: aarch64/head.s
 	$(E) "  AS      " $@
 	$(Q) $(CROSS_PREFIX)as -c $< -o $@
 
